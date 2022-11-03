@@ -4,7 +4,8 @@
     top: 0
     width: 100%
     background-color: #fff
-    opacity: .8 
+    opacity: 0.9
+    z-index: 99
     &-wrap
         display: flex
         align-items: center
@@ -29,15 +30,12 @@
     position: fixed
     z-index: -1
     top: 80px
-    width: 100%
     left: 0
+    width: 100%
     padding: 16px 0
     color: white
     background-color: #CD853F
-    opacity: .8
-    transform: translateY(-100%)
-    &_active
-        transform: translateY(0)
+    transform: translateY(0%)
     &__nav
         display: flex
         align-items: center
@@ -52,7 +50,7 @@
         flex-direction: column
         align-items: center
         justify-content: center
-        background-color: transparent
+        background-color: #fff
         border: none
         border-right: 1px solid rgba(#510bba, 0.2)
         border-left: 1px solid rgba(#510bba, 0.2)
@@ -75,3 +73,19 @@
         display: block
         font-size: 14px
         color: #6b6b6b
+@media (max-width: 991px)
+    .navbar
+        &__mobile
+            display: none
+@media (max-width: 576px)
+    .logo
+        display: none
+    .menu
+        height: 50%
+        transform: translateY(0)
+        &-button
+            height: 60px
+        &__nav
+            display: table
+        &__link
+            margin-bottom: 66px
