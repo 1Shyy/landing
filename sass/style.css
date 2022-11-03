@@ -7,6 +7,22 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
 @font-face {
   font-family: "Proxima Nova Semibold";
   src: url("../fonts/ProximaNova-Semibold.eot");
@@ -35,6 +51,18 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+.bg-secondary {
+  background: #f1f1f1;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
+}
 .navbar-wrap {
   display: flex;
   align-items: center;
@@ -57,12 +85,33 @@ body {
   color: #6b6b6b;
 }
 
+.menu {
+  position: fixed;
+  z-index: -1;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  color: white;
+  background-color: #CD853F;
+  transform: translateY(0%);
+}
+.menu__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+}
 .menu-button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  background-color: #fff;
   border: none;
   border-right: 1px solid rgba(81, 11, 186, 0.2);
   border-left: 1px solid rgba(81, 11, 186, 0.2);
@@ -90,7 +139,43 @@ body {
   color: #6b6b6b;
 }
 
+@media (max-width: 991px) {
+  .navbar__mobile {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    height: 50%;
+    transform: translateY(0);
+  }
+  .menu-button {
+    height: 60px;
+  }
+  .menu__nav {
+    display: table;
+  }
+  .menu__link {
+    margin-bottom: 66px;
+  }
+}
 .hero {
-  background: url("../img/hero/hero-bg.jpg");
+  background: #f1f1f1 url("../img/hero/hero-ss.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 160px;
+}
+.hero-title {
+  font-size: 40px;
+  color: black;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.hero-subtitle {
+  font-size: 28px;
+  color: black;
+  font-family: "Proxima Nova Light", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
