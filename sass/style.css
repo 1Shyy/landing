@@ -47,12 +47,19 @@ body {
   padding: 17px 22px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #507fe1;
+  background-color: #507fe1;
+  color: #fff;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
 .bg-secondary {
-  background: #f1f1f1;
+  background: #e1e1e1;
+}
+
+.input {
+  height: 80px;
+  marging-left: 30px;
+  border: solid #dddddd;
 }
 
 .navbar {
@@ -86,14 +93,13 @@ body {
 }
 
 .menu {
-  position: fixed;
   z-index: -1;
   top: 80px;
   left: 0;
   width: 100%;
   padding: 16px 0;
   color: white;
-  background-color: #CD853F;
+  background-color: #507fe1;
   transform: translateY(0%);
 }
 .menu__nav {
@@ -177,5 +183,78 @@ body {
   font-size: 28px;
   color: black;
   font-family: "Proxima Nova Light", sans-serif;
+}
+
+.offer {
+  padding: 129px;
+}
+.offer-block {
+  background: #fff url(../img/offer/offer-bg.jpg) no-repeat center right;
+  padding: 80px;
+  margin-top: -200px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.offer__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  margin-bottom: 20px;
+}
+.offer__subtitle {
+  display: block;
+  font-size: 21px;
+  margin-bottom: 48px;
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.form__label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.form__group {
+  flex-basis: 33.33%;
+}
+.form__input {
+  width: 97.5%;
+}
+.form__button {
+  height: 85px;
+  width: 100%;
+  font-size: 17px;
+}
+
+@media (max-width: 1250px) {
+  .offer-block {
+    background-position: center right -100px;
+  }
+}
+@media (max-width: 1140px) {
+  .offer-block {
+    background: none;
+    background-color: #fff;
+  }
+}
+@media (max-width: 966px) {
+  .offer {
+    padding: 30px;
+  }
+  .offer-block {
+    background: none;
+    background-color: #fff;
+  }
+  .form__row {
+    flex-direction: column;
+  }
+  .form__group {
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
