@@ -35,6 +35,14 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.8;
+}
 .navbar-wrap {
   display: flex;
   align-items: center;
@@ -57,6 +65,31 @@ body {
   color: #6b6b6b;
 }
 
+.menu {
+  position: fixed;
+  z-index: -1;
+  top: 80px;
+  width: 100%;
+  left: 0;
+  padding: 16px 0;
+  color: white;
+  background-color: #CD853F;
+  opacity: 0.8;
+  transform: translateY(-100%);
+}
+.menu_active {
+  transform: translateY(0);
+}
+.menu__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+}
 .menu-button {
   display: flex;
   flex-direction: column;
@@ -91,6 +124,22 @@ body {
 }
 
 .hero {
-  background: url("../img/hero/hero-bg.jpg");
+  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 180px;
+  padding-bottom: 160px;
 }
-/*# sourceMappingURL=style.css.map */
+.hero-tittle {
+  font-size: 40px;
+  color: #F8F8FF;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.hero-subtittle {
+  font-size: 28px;
+  color: #F8F8FF;
+  font-family: "Proxima Nova Light", sans-serif;
+}
+
+.nero {
+  padding-top: 100px;
+}/*# sourceMappingURL=style.css.map */
